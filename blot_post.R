@@ -72,7 +72,13 @@ source("functions.R")
 # varDecomp(thai.df$ccode, thai.df$AUTOC.l1) - will decompose variance given two
 #	vectors.
 
-p <- plotVarDecomp(df, "ccode")
+labels <- c("Amnesty score", "PolIV Autocracy", "PolIV Democracy", "GDP", 
+	"Population", "Oil prices", "Mil. Expd.", "Excl. Groups", "Excl. Pop.",
+	"Cellphones per 1k", "CPI", "ICEWS total events", "Anti-G Protests", 
+	"Intra-gov. conflict", "Gov. to Dis. mat. conflict", "knn4, anti-g. prot.",
+	"Centdist, anti-g. prot.", "Gower econ, anti-g. prot.", "Gower pol, anti-g. prot.")
+
+p <- plotVarDecomp(df, "ccode", labels=labels)
 
 ggsave(file="varplot.png", p, width=6, height=6, dpi=300)
 
