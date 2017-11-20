@@ -7,4 +7,4 @@ variance, in `functions.R`.
 To replicate the blog post figures, run `blog_post.R`. The first figure won't 
 work without the `spduration` R package.
 
-andreas.beger@duke.edu
+[@andybeega](https://twitter.com/andybeega)
